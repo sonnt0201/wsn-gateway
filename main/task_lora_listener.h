@@ -1,9 +1,17 @@
 #ifndef TASK_LORA_LISTENER
 #define TASK_LORA_LISTENER
 
-// ************* INTERFACE ******************
+// ************* INTERFACES ******************
 void lora_listener(void *pvParameters);
 
+/*
+  Quickest way to send TH data to server
+*/
+void quick_send(
+    char* device_id, // 48 bits mac address
+    double temperature,
+    int humidity
+);
 
 // ***************** IMPLEMENTATION ***************
 #include "esp_system.h"
@@ -13,11 +21,7 @@ void lora_listener(void *pvParameters);
 #include <stdlib.h>
 #include <string.h>
 
-void quick_send(
-    char* device_id, // 48 bits mac address
-    double temperature,
-    int humidity
-);
+
 
 
 

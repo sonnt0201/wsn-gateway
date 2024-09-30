@@ -10,10 +10,17 @@ void app_main(void)
 {
     init_encoded_data_queue();
     easywifi_connect();
+
+    /* ******* OTHER SETUPS ******* */
+
+
+    /* ****** END SETUPS ********** */
     xTaskCreatePinnedToCore(lora_listener, "lora_listener", 8196, NULL, 1, NULL, 0); // Chạy task lora_listener ở core 0
     xTaskCreatePinnedToCore(th_sender, "th_sender", 8192, NULL, 13, NULL, 1); // Chạy task th_sender ở core 1 
 }
-
+/*
+    Phần của Đức triển khai, ông có thể xóa hết nội dung trong hàm dưới rồi viết lại hàm
+*/
 void lora_listener(void *pvParameters){
     
     srand(time(NULL));
@@ -40,3 +47,5 @@ void lora_listener(void *pvParameters){
        
     };
 };
+
+
