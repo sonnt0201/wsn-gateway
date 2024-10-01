@@ -1,5 +1,9 @@
 # Note cho Đức về hệ thống
 
+## Tổng quan
+
+Doc này hướng dẫn ae cài gateway và server-giao diện của hệ thống wsn. Đồng thời hướng dẫn Đức về code cho gateway để ông có thể viết tiếp phần kết nối và nghe bản tin lora.
+
 ## Cài đặt
 
 ### Điều kiên tiên quyết
