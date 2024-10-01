@@ -61,7 +61,7 @@ npm run start
 
 Lưu ý disable firewall để gateway truyền tin được tới server.
 
-Sau khi server khởi động, để mở giao diện, truy cập vào đường link [http://localhost:3000/dev]()
+Sau khi server khởi động, để mở giao diện, truy cập vào đường link [http://localhost:3000/dev](http://localhost:3000/dev)
 
 ## Hướng dẫn về gateway
 

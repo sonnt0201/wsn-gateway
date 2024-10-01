@@ -13,7 +13,7 @@
 // #define Q_ITEM_SIZE 12
 
 
-#define WEB_SERVER "192.168.94.43"
+#define WEB_SERVER "192.168.161.42"
 #define WEB_PORT "5000"
 #define WEB_PATH "/th"
 
